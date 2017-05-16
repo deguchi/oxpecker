@@ -24,4 +24,4 @@ $ webpack && bookmarkletter bookmark.js
 - bookmarkletter https://www.npmjs.com/package/bookmarkletter
 
 ## known issues
-- copy mml to clipboard onlyå
+- copy mml to clipboard only

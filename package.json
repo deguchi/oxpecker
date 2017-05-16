@@ -14,7 +14,7 @@
     "Sionic.js": "git+https://github.com/minipop/sionicjs/"
   },
   "author": "Satoshi Deguchi",
-  "license": "MIT",
+  "license": "AGPL",
   "bugs": {
     "url": "https://github.com/deguchi/playmml/issues"
   },
