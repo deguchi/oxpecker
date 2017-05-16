@@ -2,5 +2,5 @@
 .DS_Store
 
 .idea/
-
+bookmarklet.js
 node_modules/
