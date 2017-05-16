@@ -21,4 +21,16 @@ $ webpack && bookmarkletter bookmark.js
 - bookmarkletter https://www.npmjs.com/package/bookmarkletter
 
 ## known issues
+<<<<<<< HEAD
 - copy mml to clipboard only
+=======
+oxpecker lacks many feature, current code is just only for working confirmation.
+Developer is going to implement following features.
+- language switcher and keeping settings
+- auto adding translation button
+- supporting another translation API (Bing and Yandex)
+- develop easy implemantation on Mastodon instance without bookmarklet.
+
+## License
+oxpecker are made available under the terms of the GNU Affero General Public License (GNU AGPLv3) with respecting Mastodon , since 17:00 JST 16th,May 2017.
+>>>>>>> ttrace/master
