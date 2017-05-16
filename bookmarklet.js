@@ -82,28 +82,33 @@ module.exports = function(){
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var ox_target_contents_list = document.querySelectorAll('.status__content:not(.ox-flagged):not(.muted)');
+const targetContentsList = document.querySelectorAll('.status__content:not(.ox-playflagged):not(.muted)');
 
-var create_button = __webpack_require__(0);
-var ox_playmml_button_template = create_button();
+const createButton = __webpack_require__(0);
+const playmmlButtonTemplate = createButton();
 
-ox_target_contents_list.each(function(i){
-     var ox_target_content = ox_target_contents_list[i]
-     var mysource = ox_target_content.textContent;
-     var ox_playmml_button = ox_playmml_button_template.cloneNode(true);
+targetContentsList.each((i) => {
+     const targetContent = targetContentsList[i];
+     const sourceText = targetContent.textContent;
+     const playmmlButton = playmmlButtonTemplate.cloneNode(true);
 
-     var playmml_anchor = document.createElement("DIV");
-          playmml_anchor.id = "playmml_" + Math.round( Math.random()*1000 );
-     var target_id = playmml_anchor.id;
-     ox_target_content.appendChild(playmml_anchor);
-     ox_target_content.classList.add("ox-flagged");
+     const playmmlAnchor = document.createElement("DIV");
+          playmmlAnchor.id = "playmml_" + Math.round( Math.random()*1000 );
+     const targetId = playmmlAnchor.id;
+     targetContent.appendChild(playmmlAnchor);
+     targetContent.classList.add("ox-playflagged");
 
-     ox_target_content.parentNode.appendChild( ox_playmml_button );
-     ox_playmml_button.addEventListener('click', function(){
-          console.log('started');
+     targetContent.parentNode.appendChild( playmml_button );
+     playmmlButton.addEventListener('click', function(){
+          console.log('played');
+          // https://developer.mozilla.org/ja/docs/Web/API/Fetch_API/Using_Fetch
+          // fetch(url).then(function(response) {
+          //   return response.json();
+          // }).then(function(json) {
+          // });
      }
      , false);
-})
+});
 
 
 /***/ })

@@ -11,7 +11,8 @@
     "url": "git+https://github.com/deguchi/playmml.git"
   },
   "dependencies": {
-    "Sionic.js": "git+https://github.com/minipop/sionicjs/"
+    "Sionic.js": "git+https://github.com/minipop/sionicjs/",
+    "bookmarkletter": "^0.1.1"
   },
   "author": "Satoshi Deguchi",
   "license": "MIT",
