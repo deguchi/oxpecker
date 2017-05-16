@@ -5,7 +5,7 @@ oxplaymml adds play mml button on Mastodon with bookmarklet.
 
 copy following code and paste on location of your browser.
 ```
-javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://rawgit.com/deguchi/oxplaymml/master/bookmarklet.js';})();
+javascript:(function(){const%20targetContentsList=document.querySelectorAll('.status__content:not(.ox-playflagged):not(.muted)');const%20createButton=require('./play-button.js');const%20playmmlButtonTemplate=createButton();targetContentsList.each(i=%3E{const%20targetContent=targetContentsList[i];const%20sourceText=targetContent.textContent;const%20playmmlButton=playmmlButtonTemplate.cloneNode(true);const%20playmmlAnchor=document.createElement('DIV');playmmlAnchor.id='playmml_'+Math.round(Math.random()*1e3);const%20targetId=playmmlAnchor.id;targetContent.appendChild(playmmlAnchor);targetContent.classList.add('ox-playflagged');targetContent.parentNode.appendChild(playmml_button);playmmlButton.addEventListener('click',function(){console.log('played')},false)})}())
 ```
 
 ## Build
