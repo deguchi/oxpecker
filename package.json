@@ -1,0 +1,22 @@
+{
+  "name": "playmml",
+  "version": "0.0.1",
+  "description": "oxpecker adds translation button on Mastodon with bookmarklet.",
+  "main": "oxpecker.config.sample.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deguchi/playmml.git"
+  },
+  "dependencies": {
+    "Sionic.js": "git+https://github.com/minipop/sionicjs/"
+  },
+  "author": "Satoshi Deguchi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deguchi/playmml/issues"
+  },
+  "homepage": "https://github.com/deguchi/playmml#readme"
+}

@@ -1,5 +1,6 @@
 
 .DS_Store
 
-bookmarklet.js
-oxpecker.config.js
+.idea/
+
+node_modules/

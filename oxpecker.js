@@ -1,10 +1,3 @@
-var ox_config = require('./oxpecker.config.js');
-
-var endpoint_url = "https://translation.googleapis.com/language/translate/v2?key=" + ox_config.api_key;
-var ox_target_language = ox_config.ox_target_language;
-
-var browser_language = (window.navigator.languages && window.navigator.languages[0]).split("-")[0];
-
 var ox_target_contents_list = $(".status__content").not($(".ox-flagged")).not($(".status.muted .status__content"));
 
 var create_button = require('./translation-button.js');

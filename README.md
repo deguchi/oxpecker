@@ -1,9 +1,7 @@
-# oxpecker
-oxpecker adds translation button on Mastodon with bookmarklet.
+# oxplaymml
+oxplaymml adds play mml button on Mastodon with bookmarklet.
 
-## demo for Javascript Birthday!
-followingcode runs only [developer page](https://ostatus.taiyolab.com/@t_trace).
-I boost father of Javascript, Brendan Eich's toots today (15th April).
+## demo
 
 copy following code and paste on location of your browser.
 ```
@@ -11,7 +9,6 @@ javascript:(function()%7B(function(c)%7Bvar%20b=%7B%7D;function%20a(e)%7Bif(b%5B
 ```
 
 ## Build
-Duplicate `oxpecker.config.sample.js` as `oxpecker.config.js` and write Google Translation Key.
 
 ```
 $ webpack && bookmarkletter bookmark.js
